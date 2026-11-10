@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+:root{--bg:#10110f;--panel:#1a1d18;--panel2:#22271f;--line:#414b36;--text:#e9e8d9;--muted:#a0a58e;--lime:#c6ef64;--red:#ff625d;--yellow:#ffd166;--blue:#79c8d8}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#283020 0,#11130f 55%,#090a09 100%);color:var(--text);font-family:'VT323',monospace;font-size:21px;min-height:100vh}.scanlines{pointer-events:none;position:fixed;inset:0;z-index:10;opacity:.09;background:repeating-linear-gradient(transparent 0 2px,#000 3px 4px)}header,main,footer{max-width:1400px;margin:auto;padding:20px}header{display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--line)}h1,h2,h3,.eyebrow,.stamp,button,.status{font-family:'Press Start 2P',monospace}h1{font-size:clamp(20px,3vw,34px);color:var(--lime);margin:10px 0}h1 span{font-size:10px;color:var(--yellow)}h2{font-size:16px;line-height:1.7}h3{font-size:10px;margin:0}.eyebrow{font-size:9px;letter-spacing:1px;color:var(--muted)}p{line-height:1.35;color:#d4d6c6}.head-actions{display:flex;gap:8px}.panel{background:linear-gradient(145deg,#1c211a,#151813);border:2px solid var(--line);box-shadow:5px 5px 0 #080a07;padding:16px;margin-bottom:14px}.start{max-width:650px;margin:45px auto;text-align:center;padding:32px}.stamp{display:inline-block;border:2px solid var(--red);color:var(--red);padding:9px;font-size:9px;transform:rotate(-3deg)}.start-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;text-align:left;margin:25px 0}label{font-size:17px;color:var(--muted)}input,select{display:block;width:100%;margin-top:8px;background:#0d100c;color:var(--text);border:2px solid var(--line);padding:10px;font:20px 'VT323';outline:none}button{border:2px solid var(--lime);padding:13px 16px;background:#303b22;color:var(--lime);font-size:10px;cursor:pointer;box-shadow:3px 3px 0 #080a07}button:hover{filter:brightness(1.25);transform:translateY(-1px)}button:disabled{opacity:.4;cursor:not-allowed}.primary{background:var(--lime);color:#14180d}.ghost{border-color:#68715a;background:#171c14;color:#d3d9c3}.wide{width:100%;margin-top:10px}.hidden{display:none!important}.topline{display:flex;justify-content:space-between;margin:12px 0}.topline .eyebrow{margin-right:20px}.status{font-size:9px;color:var(--yellow)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.stat{display:grid;grid-template-columns:1fr auto;gap:9px;font-size:17px}.stat span{font-size:16px;color:var(--muted)}.stat b{font-size:22px;color:var(--lime)}.meter{height:9px;background:#090c08;border:1px solid #444d3a;grid-column:1/-1}.meter i{display:block;height:100%;width:50%;background:var(--lime);transition:width .5s}.dashboard{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(280px,.85fr);gap:14px}.scene{padding:10px}.scene-head,.section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.scene-head span:last-child{font-size:17px;color:var(--yellow)}canvas{display:block;width:100%;image-rendering:pixelated;background:#111a16;border:1px solid #394532}.event h2{color:var(--yellow);margin:12px 0 6px}.event p{margin:0 0 15px}.choices{display:grid;gap:8px}.choices button{text-align:left;line-height:1.5;font-family:'VT323';font-size:21px;color:var(--text);background:#252c20;border-color:#566248;box-shadow:3px 3px 0 #080a07}.choices button:hover{border-color:var(--lime);color:var(--lime)}.rollline{display:flex;align-items:center;gap:14px;border-top:1px dashed #4b543f;margin-top:16px;padding-top:12px}.die{width:56px;height:56px;display:grid;place-items:center;background:linear-gradient(145deg,#d8f27b,#667d2e);color:#111;border:4px solid #e7f9a4;clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);font:17px 'Press Start 2P';text-shadow:1px 1px #fff}.rollline p{font-size:16px;margin:4px 0}.news-list{display:grid;gap:7px}.news-item{border-left:3px solid var(--yellow);padding:6px 10px;background:#11150f;font-size:18px}.news-item small{display:block;color:var(--muted);font-size:13px}.ministers{display:grid;gap:9px}.minister{display:grid;grid-template-columns:36px minmax(0,1fr) auto;gap:8px;align-items:center;border-bottom:1px solid #343d2e;padding:5px 0}.minister-actions{display:flex;align-items:center;justify-content:flex-end;gap:6px;min-width:0}.minister-actions button{flex:0 0 auto;white-space:nowrap}.avatar{width:34px;height:34px;display:grid;place-items:center;background:#39452b;border:1px solid #778a4e;font-size:22px}.minister b{font-size:18px}.minister small{display:block;color:var(--muted);font-size:14px}.minister button{font-size:8px;padding:7px}.prices{display:grid;grid-template-columns:1fr auto;gap:5px}.prices span{color:var(--muted)}.prices b{color:var(--yellow)}.tiny,small{font-size:15px;color:var(--muted)}.heat{font:9px 'Press Start 2P';color:var(--lime)}.regions{display:grid;grid-template-columns:1fr 1fr;gap:6px}.regions button{font:17px 'VT323';padding:8px;text-align:left}.location-info{font-size:16px;color:var(--muted);margin-top:9px;min-height:42px}.live{font:8px 'Press Start 2P';color:var(--red)}.election p{font-size:17px}.footer-actions{display:flex;gap:10px;justify-content:center;margin:20px}.modal{position:fixed;inset:0;background:#000d;z-index:20;display:grid;place-items:center;padding:20px}.modal-card{width:min(680px,100%);background:#1b2118;border:3px solid var(--yellow);padding:20px;box-shadow:8px 8px #000}.modal-card h2{color:var(--yellow)}.modal-card canvas{margin:12px 0}footer{text-align:center;color:#737b68;font-size:13px;border-top:1px solid var(--line)}@media(max-width:850px){.dashboard{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}}@media(max-width:520px){header{align-items:flex-start;gap:10px;flex-direction:column}.head-actions{width:100%}.head-actions button{flex:1}.start-grid{grid-template-columns:1fr}.stats{gap:8px}.stat span{font-size:13px}.footer-actions{flex-direction:column}.topline{gap:8px;flex-direction:column}}
+.investigation-actions{display:grid;gap:8px;margin-top:10px}.investigation-actions button{font-size:8px;line-height:1.6;padding:10px}.investigation-actions small{line-height:1.35}.modal-card canvas.cinematic{height:280px;object-fit:cover;border:2px solid var(--red);box-shadow:0 0 22px #ff625d55;animation:cinemaIn .55s ease-out}.modal-card{animation:modalIn .25s ease-out}@keyframes cinemaIn{from{opacity:.15;transform:scale(.96);filter:contrast(2)}to{opacity:1;transform:scale(1);filter:contrast(1)}}@keyframes modalIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+
+.systems-panel{margin-top:14px}.system-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.system-metrics>div{display:flex;justify-content:space-between;gap:8px;padding:7px;background:#11150f;border-left:2px solid var(--blue)}.system-metrics small{font-size:12px}.system-metrics b{font-size:17px;color:var(--yellow)}.action-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:12px}.action-grid button{font-size:8px;line-height:1.5;padding:10px 7px}.regional-approval{display:grid;gap:7px}.region-meter{display:grid;grid-template-columns:90px 1fr 34px;gap:7px;align-items:center;font-size:16px}.region-meter .meter{grid-column:auto}.region-meter b{text-align:right;color:var(--lime)}.action-grid button:disabled{opacity:.35}@media(max-width:520px){.action-grid{grid-template-columns:1fr}.system-metrics>div{flex-direction:column;gap:2px}.region-meter{grid-template-columns:78px 1fr 30px}}
+
+/* Gabinete compacto: reduz a altura ocupada pelo painel de ministros */
+.sidecol > .panel:first-child{padding:10px 12px;margin-bottom:10px}
+.sidecol > .panel:first-child .section-title{margin-bottom:6px}
+.sidecol > .panel:first-child .ministers{gap:3px}
+.sidecol > .panel:first-child .minister{grid-template-columns:27px minmax(0,1fr) auto;gap:6px;padding:3px 0}
+.sidecol > .panel:first-child .avatar{width:26px;height:26px;font-size:17px}
+.sidecol > .panel:first-child .minister b{font-size:15px;line-height:1.1}
+.sidecol > .panel:first-child .minister small{font-size:12px;line-height:1.1}
+.sidecol > .panel:first-child .minister button{font-size:7px;padding:5px 6px;box-shadow:2px 2px 0 #080a07}
+
+/* Cutscenes cinematográficas */
+.modal-card canvas.cinematic{height:300px;filter:saturate(1.25) contrast(1.08);transition:filter .3s,transform .3s}
+.modal-card canvas.scene-shake{animation:sceneShake .55s ease-in-out,cinemaGlow 2.8s ease-in-out infinite alternate}
+@keyframes sceneShake{0%,100%{transform:translateX(0)}15%{transform:translateX(-5px)}30%{transform:translateX(4px)}45%{transform:translateX(-3px)}60%{transform:translateX(2px)}75%{transform:translateX(-1px)}}
+@keyframes cinemaGlow{from{box-shadow:0 0 12px #ff625d55}to{box-shadow:0 0 30px #ff625daa}}
+@media(prefers-reduced-motion:reduce){.modal-card canvas.scene-shake{animation:none}}
+
+/* DESGOVERNO v1.0 — sistemas de instabilidade e mapa urbano */
+.expansion-panel{border-color:rgba(226,178,91,.28)}
+.minister{grid-template-columns:38px minmax(0,1fr) auto auto;gap:8px}
+.minister-copy{min-width:0;display:flex;flex-direction:column;gap:3px}
+.minister-trait{color:var(--yellow)!important;white-space:normal;line-height:1.3}
+.minister button{padding:6px 8px;font-size:10px}
+.city-map{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0}
+.district{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:5px;min-height:58px;padding:10px;border:1px solid var(--line);background:#17232b;color:var(--text);border-radius:5px;cursor:pointer}
+.district b{font-size:12px}.district small{font-size:10px;color:var(--muted)}
+.district.stable{border-left:4px solid var(--lime)}.district.tense{border-left:4px solid var(--yellow)}.district.critical{border-left:4px solid var(--red);background:rgba(132,43,35,.2);animation:districtPulse 2.2s infinite}
+.map-legend{display:flex;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:10px}.map-legend span:nth-child(1){color:var(--lime)}.map-legend span:nth-child(2){color:var(--yellow)}.map-legend span:nth-child(3){color:var(--red)}
+@keyframes districtPulse{50%{box-shadow:0 0 12px rgba(218,75,62,.2)}}
+@media(max-width:620px){.city-map{grid-template-columns:1fr}.minister{grid-template-columns:34px minmax(0,1fr) auto auto}}
+
+
+/* DESGOVERNO v1.1 — painel de uma tela e campanha de quatro turnos */
+.state-controls{display:grid;gap:3px}.state-row{display:grid;grid-template-columns:minmax(80px,1fr) 1fr auto;gap:5px;align-items:center;padding:3px 4px;background:#11150f}.state-row span{display:flex;flex-direction:column;min-width:0}.state-row span b{font-size:13px}.state-row span small{font-size:10px}.state-row button{font-size:7px;padding:4px 5px;box-shadow:none}.state-row.abolished{opacity:.65;border-left:3px solid var(--red)}
+@media(min-width:1000px){
+ html,body{height:100%;overflow:hidden}body{min-height:0;font-size:16px}
+ header{height:58px;padding:5px 14px;max-width:none;border-bottom:1px solid var(--line)}header h1{font-size:21px;margin:2px 0}header h1 span{font-size:8px}header p{display:none}header .eyebrow{font-size:7px}.head-actions button{padding:6px 9px;font-size:8px}
+ main{max-width:none;height:calc(100vh - 82px);padding:5px 10px;overflow:hidden}#game{height:100%;display:flex;flex-direction:column;min-height:0}.topline{margin:2px 0 5px;font-size:12px}.topline .eyebrow{font-size:8px}.stats{padding:6px 9px;margin:0 0 6px;gap:8px}.stat{gap:3px}.stat span{font-size:12px}.stat b{font-size:16px}.meter{height:6px}
+ .dashboard{flex:1;min-height:0;overflow:hidden;grid-template-columns:minmax(300px,34%) minmax(0,66%);gap:7px}.maincol{display:grid;grid-template-rows:minmax(90px, .8fr) minmax(190px,1.55fr) minmax(90px,.8fr);gap:6px;min-height:0;overflow:hidden}.maincol>.panel,.sidecol>.panel{margin:0;padding:7px 8px;min-height:0;overflow:hidden}.scene canvas{height:100px;object-fit:cover}.scene-head{margin-bottom:4px}.scene-head .eyebrow{font-size:7px}.event h2{font-size:12px;margin:4px 0}.event p{font-size:13px;line-height:1.15;margin:0 0 5px}.choices{gap:4px}.choices button{font-size:14px;line-height:1.15;padding:5px 7px;box-shadow:none}.rollline{margin-top:5px;padding-top:5px;gap:7px}.die{width:34px;height:34px;font-size:10px}.rollline p{font-size:12px}.news-list{gap:3px}.news-item{font-size:12px;padding:3px 5px;line-height:1.1}.news-item:nth-child(n+4){display:none}.news-item small{font-size:9px}
+ .sidecol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(5,minmax(0,1fr));gap:6px;min-height:0;overflow:hidden}.sidecol .section-title{margin-bottom:4px}.sidecol h3{font-size:8px}.sidecol .eyebrow{font-size:7px}.sidecol .tiny,.sidecol p{font-size:10px;line-height:1.1;margin:3px 0}.sidecol .ministers{gap:1px}.sidecol .minister{grid-template-columns:20px minmax(0,1fr) auto auto;gap:3px;padding:1px 0}.sidecol .avatar{width:18px;height:18px;font-size:12px}.sidecol .minister b{font-size:11px}.sidecol .minister small{font-size:9px;line-height:1}.sidecol .minister-trait{display:none}.sidecol .minister button{font-size:6px;padding:3px}.sidecol .prices{gap:1px;font-size:11px}.sidecol .regions{grid-template-columns:repeat(2,1fr);gap:3px}.sidecol .regions button{font-size:11px;padding:3px}.sidecol .location-info{font-size:10px;min-height:0;margin-top:3px}.sidecol .system-metrics{gap:3px}.sidecol .system-metrics>div{padding:3px;gap:2px}.sidecol .system-metrics small{font-size:8px}.sidecol .system-metrics b{font-size:11px}.sidecol .action-grid{gap:3px;margin-top:4px}.sidecol .action-grid button{font-size:6px;line-height:1.1;padding:4px 3px;box-shadow:none}.sidecol .regional-approval{gap:2px}.sidecol .region-meter{grid-template-columns:65px 1fr 22px;gap:3px;font-size:10px}.sidecol .state-row{grid-template-columns:65px 1fr auto;gap:3px;padding:1px}.sidecol .state-row span b{font-size:10px}.sidecol .state-row span small{font-size:8px}.sidecol .state-row button{font-size:6px;padding:3px} .sidecol .city-map{grid-template-columns:repeat(3,minmax(0,1fr));max-width:900px;gap:3px;margin:3px auto}.sidecol .district{min-height:0;padding:4px;gap:2px}.sidecol .district b{font-size:8px}.sidecol .district small{font-size:7px}.sidecol .map-legend{font-size:8px;gap:4px}.sidecol .election p{font-size:10px}.sidecol .investigation-actions{gap:3px;margin-top:3px}.sidecol .investigation-actions button{font-size:6px;padding:4px;line-height:1.1}.sidecol .investigation-actions small{font-size:8px;line-height:1}
+ .footer-actions{margin:4px 0;gap:6px}.footer-actions button{font-size:7px;padding:5px 8px}.footer-actions #nextTurn{display:none}footer{display:none}
+}
+@media(max-width:999px){body{overflow:auto}.state-row{grid-template-columns:1fr 1fr auto}}
+
+/* Alertas contextuais: exibidos quando um indicador muda 8 pontos percentuais ou mais */
+#modal:has(.modal-card #modalKicker) .modal-card{max-width:620px;border-color:var(--red);box-shadow:0 0 0 1px #ff625d55,8px 8px #000}
+#modal:has(.modal-card #modalKicker) #modalTitle{color:var(--red);font-size:clamp(13px,2vw,18px);line-height:1.6}
+#modal:has(.modal-card #modalKicker) #modalText{font-size:17px;line-height:1.45}
+#modalChoices button{margin-top:5px}
+#modalChoices button.ghost{border-color:#68715a;color:#d3d9c3;background:#171c14}
+
+/* v1.5 — legibilidade dos painéis e correções visuais das crises */
+@media(min-width:1000px){
+ .sidecol{grid-auto-flow:row dense}
+ .sidecol>.political-panel,.sidecol>.street-panel{grid-column:span 2}
+ .sidecol h3{font-size:10px;line-height:1.5}
+ .sidecol .eyebrow{font-size:8px}
+ .sidecol .tiny,.sidecol p{font-size:11px;line-height:1.25}
+ .sidecol .system-metrics small{font-size:9px;line-height:1.25;color:#d0d5c2}
+ .sidecol .system-metrics b{font-size:13px;color:#ffe08a}
+ .sidecol .action-grid button{font-size:8px;line-height:1.3;padding:6px 5px;min-height:30px}
+ .sidecol>.political-panel .system-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .sidecol>.political-panel .action-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .sidecol>.street-panel .system-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .sidecol>.street-panel .action-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .sidecol>.political-panel .panel-feedback{font-size:10px;line-height:1.25;color:#e7d7a0}
+}
+.political-panel{border-color:rgba(121,200,216,.6);background:linear-gradient(145deg,#202a2b,#151b19)}
+.political-panel .section-title h3{color:#a8e4ef}
+.street-panel{border:2px solid rgba(255,98,93,.72);background:linear-gradient(145deg,#30201e,#191715);box-shadow:0 0 14px rgba(255,98,93,.12),5px 5px 0 #080a07}
+.street-panel .section-title h3{color:#ff8b78}
+.street-panel .system-metrics>div{border-left-color:#ff625d;background:#241916}
+.street-panel .system-metrics b{color:#ffd0a3}
+.street-panel #protestStatus{color:#f0c8b8}
+.panel-feedback{margin:7px 0 0;padding:6px 8px;border-left:3px solid var(--blue);background:#111a1b;color:#d2e7e8;font-size:13px;line-height:1.3}
+.action-grid button:disabled{opacity:.58;filter:grayscale(.5);cursor:not-allowed}
+
+
+/* v1.6 — botão de demissão do gabinete mais identificável */
+.minister .fire-minister-btn{border-color:#a94c46;background:#3a1d1b;color:#ffaaa3;white-space:nowrap;min-width:66px;text-align:center}
+.minister .fire-minister-btn:hover{border-color:#ff625d;background:#55211e;color:#fff}
+@media(min-width:1000px){.sidecol .minister .fire-minister-btn{min-width:0;padding:3px 4px;font-size:7px}}
+
+/* v1.8 — identidade nacional de Barzi e confirmações dentro do jogo */
+.nation-brand{display:flex;align-items:center;gap:13px;margin-bottom:8px;padding:8px 12px 8px 8px;width:max-content;max-width:100%;background:linear-gradient(90deg,#28351f,#171d15);border:2px solid #b8d66a;box-shadow:4px 4px 0 #080a07}
+.barzi-seal{width:48px;height:48px;flex:0 0 48px;display:grid;place-items:center;border:3px double #f1d27b;border-radius:50%;background:radial-gradient(circle,#526b35 0 42%,#202b1a 43% 100%);color:#fff0b4;font: bold 16px 'Press Start 2P';text-shadow:2px 2px #111}
+.nation-name{font:clamp(15px,2.2vw,24px) 'Press Start 2P';letter-spacing:1px;color:#e7f6a4;text-shadow:2px 2px #111;line-height:1.5}
+.nation-subtitle{font:9px 'Press Start 2P';letter-spacing:.7px;color:#f0cf78;margin-top:4px}
+header h1{margin-top:8px}
+#modal[data-kind="confirm"]{z-index:100;background:rgba(3,6,3,.88);backdrop-filter:blur(5px)}
+#modal[data-kind="confirm"] .modal-card{width:min(520px,100%);border:3px solid var(--yellow);background:linear-gradient(145deg,#283321,#11160f);box-shadow:0 0 0 5px #e7c45a22,0 18px 60px #000;}
+#modal[data-kind="confirm"] #modalTitle{color:#f4d879;font-size:clamp(15px,2vw,20px)}
+#modal[data-kind="confirm"] #modalText{font-size:21px;line-height:1.45}
+#modal[data-kind="confirm"] #modalChoices{grid-template-columns:1fr 1fr;margin-top:18px}
+#modalChoices .danger-confirm{border-color:#ff625d;background:#672d28;color:#fff0e8}
+@media(max-width:520px){.nation-brand{gap:9px;padding:6px 8px}.barzi-seal{width:40px;height:40px;flex-basis:40px;font-size:12px}.nation-subtitle{font-size:7px;line-height:1.6}.nation-name{font-size:14px}}
+
+@media(min-width:1000px){
+ header{height:64px}
+ header>div:first-child{display:flex;align-items:center;gap:14px;min-width:0}
+ .nation-brand{flex:0 0 auto;margin:0;padding:4px 8px}
+ .barzi-seal{width:38px;height:38px;flex-basis:38px;font-size:12px}
+ .nation-name{font-size:clamp(12px,1.3vw,18px);white-space:nowrap}
+ .nation-subtitle{font-size:7px;white-space:nowrap}
+ header h1{flex:0 0 auto;margin:0;white-space:nowrap;font-size:clamp(12px,1.5vw,20px)}
+ header h1 span{font-size:8px}
+ main{height:calc(100vh - 88px)}
+}
+@media(max-width:999px){
+ header{align-items:flex-start;flex-direction:column;gap:8px}
+ header>div:first-child{width:100%;min-width:0}
+ .head-actions{width:100%}
+ .head-actions button{flex:1}
+}
+
+/* v1.9 — mapa legível, painéis acessíveis e gabinete estável */
+@media(min-width:1000px){
+ .dashboard{overflow:hidden}
+ .sidecol{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:max-content;align-content:start;overflow-y:auto;overflow-x:hidden;padding:2px 7px 8px 2px;scrollbar-width:thin;scrollbar-color:#78894b #11150f}
+ .sidecol>.panel{min-width:0}
+ .sidecol>.political-panel,.sidecol>.street-panel,.sidecol>.expansion-panel:has(.city-map),.sidecol>.panel:has(#regionalApproval){grid-column:1/-1}
+ .sidecol>.panel:first-child{grid-column:1/-1}
+ .sidecol>.panel:has(#cityMap){grid-column:1/-1}
+ .sidecol .minister{grid-template-columns:30px minmax(0,1fr) auto;gap:6px;padding:4px 0}
+ .sidecol .minister-actions{gap:4px}
+ .sidecol .minister-copy{gap:2px}
+ .sidecol .minister b{font-size:13px}
+ .sidecol .minister small{font-size:10px;line-height:1.2}
+ .sidecol .minister-trait{display:block;font-size:9px}
+ .sidecol .minister button{font-size:7px;padding:5px 6px}
+ .sidecol>.political-panel .action-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .sidecol>.political-panel .action-grid button{min-height:38px;font-size:8px;white-space:normal}
+ .sidecol>.panel:has(#cityMap){min-height:210px}
+}
+.city-map{position:relative;display:grid;width:100%;max-width:900px;margin:3px auto;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,minmax(76px,auto));gap:8px;padding:14px;border:1px solid #52624a;border-radius:8px;background:radial-gradient(ellipse at center,#263c30 0,#18251f 65%,#111a16 100%);overflow:hidden}
+.city-map:before{content:"BARZI • MAPA URBANO";position:absolute;top:5px;left:10px;color:#93a57b;font:8px 'Press Start 2P';opacity:.7;pointer-events:none}
+.city-map:after{content:"";position:absolute;inset:30px 12% 12px;background:repeating-linear-gradient(35deg,transparent 0 30px,#8aa17a14 31px 34px),repeating-linear-gradient(125deg,transparent 0 42px,#8aa17a12 43px 46px);pointer-events:none}
+.district{position:relative;z-index:1;display:flex;flex-direction:column;min-width:0;min-height:72px;align-items:flex-start;justify-content:center;gap:4px;padding:8px;text-align:left;background:#1a2925eF;border:1px solid #52624a;border-radius:6px;box-shadow:2px 3px #080a07;color:#eef0df}
+.district b{font:10px 'Press Start 2P';font-size:8px;line-height:1.5;overflow-wrap:anywhere}
+.district small{font-size:11px;line-height:1.25;color:#d0d9c4}
+.district .district-pin{font-size:13px;font-weight:bold}
+.district.stable .district-pin{color:var(--lime)}.district.tense .district-pin{color:var(--yellow)}.district.critical .district-pin{color:#ff7169}
+.district.selected{outline:3px solid #e7f5a0;outline-offset:1px;box-shadow:0 0 14px #d9f17b55}
+.city-map .district:nth-child(1){grid-column:2;grid-row:2}
+.city-map .district:nth-child(2){grid-column:1;grid-row:2}
+.city-map .district:nth-child(3){grid-column:3;grid-row:2}
+.city-map .district:nth-child(4){grid-column:1;grid-row:1}
+.city-map .district:nth-child(5){grid-column:3;grid-row:1}
+.city-map .district:nth-child(6){grid-column:1;grid-row:3}
+.city-map .district:nth-child(7){grid-column:3;grid-row:3}
+.city-map .district:focus-visible{outline:3px solid #fff}
+.map-legend{font-size:12px;gap:16px}
+.location-info strong{color:#e9f2bf}
+.political-panel .system-metrics>div{min-height:42px;align-items:center}
+.political-panel .system-metrics small{font-size:11px;line-height:1.3}
+.political-panel .system-metrics b{font-size:16px}
+.political-panel .panel-feedback{font-size:13px;line-height:1.45;padding:9px 11px;min-height:38px}
+.minister .fire-minister-btn{min-width:70px}
+@media(max-width:620px){.city-map{grid-template-columns:1fr;grid-template-rows:none;grid-auto-rows:minmax(74px,auto);gap:5px;padding:10px}.city-map .district{grid-column:auto!important;grid-row:auto!important}.district{padding:5px;min-height:66px}.district b{font-size:7px}.district small{font-size:10px}.sidecol>.political-panel .action-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+@media(min-width:1000px){
+ .sidecol .eyebrow{font-size:10px}
+ .sidecol .tiny,.sidecol p{font-size:13px;line-height:1.25}
+ .sidecol .system-metrics small{font-size:11px}
+ .sidecol .minister small{font-size:12px;line-height:1.2}
+ .sidecol .minister-trait{font-size:11px}
+ .sidecol .minister button{font-size:9px}
+ .sidecol .action-grid button{font-size:10px;line-height:1.25}
+ .sidecol .regions button{font-size:13px}
+ .sidecol .location-info{font-size:12px}
+ .sidecol .region-meter{font-size:12px}
+ .sidecol .state-row span b{font-size:12px}
+ .sidecol .state-row span small{font-size:10px}
+ .sidecol .state-row button{font-size:8px}
+ .sidecol .district b{font-size:10px}
+ .sidecol .district small{font-size:9px;line-height:1.3}
+ .sidecol .map-legend{font-size:10px}
+ .sidecol .election p{font-size:12px}
+ .sidecol .investigation-actions button{font-size:8px}
+ .sidecol .investigation-actions small{font-size:10px}
+}
+@media(max-width:999px){
+ .sidecol .eyebrow{font-size:11px}
+ .sidecol .system-metrics small{font-size:14px}
+ .sidecol .action-grid button{font-size:10px}
+ .sidecol .minister small{font-size:16px}
+ .sidecol .minister button{font-size:10px}
+ .sidecol .district b{font-size:10px}
+ .sidecol .district small{font-size:12px}
+ .sidecol .map-legend{font-size:14px}
+ .sidecol .regions button{font-size:19px}
+ .sidecol .location-info{font-size:18px}
+}
+@media(min-width:1000px){
+ .sidecol>.political-panel .action-grid button{font-size:10px}
+}
